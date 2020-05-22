@@ -4,7 +4,9 @@ const Book = use('App/Models/Book')
 const puppeteer = require('puppeteer');
 
 async function scrape(bookTitle){
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({
+    args : ['--no-sandbox']
+  });
   const page = await browser.newPage();
   console.log('im running')
   await page.goto("https://www.bookdepository.com/search?searchTerm=" + bookTitle + "&search=Find+book")
