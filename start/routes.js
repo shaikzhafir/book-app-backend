@@ -17,7 +17,7 @@
 const Route = use('Route')
 
 Route.get('/', () => {
-  return { "youre never gonna get PC" }
+  return "youre never gonna get PC" 
 })
 
 
