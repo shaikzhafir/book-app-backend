@@ -14,3 +14,4 @@ for adonis (only the force thing should be -- )
 
 most of the information about the db after adding on can be found on the database section in heroku itself
 
+test from new laptop
